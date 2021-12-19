@@ -1,0 +1,364 @@
+define(['dart_sdk', 'packages/flutter/src/material/page.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/belajar_flutter/widgets/custom_appbar.dart', 'packages/belajar_flutter/widgets/custom_navbar.dart', 'packages/carousel_slider/carousel_controller.dart', 'packages/carousel_slider/carousel_options.dart', 'packages/belajar_flutter/models/category_model.dart', 'packages/belajar_flutter/widgets/hero_carousel_card.dart', 'packages/belajar_flutter/widgets/section_title.dart', 'packages/belajar_flutter/widgets/product_carousel.dart', 'packages/belajar_flutter/models/product_model.dart'], (function load__packages__belajar_flutter__screens__home__home_screen_dart(dart_sdk, packages__flutter__src__material__page$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__belajar_flutter__widgets__custom_appbar$46dart, packages__belajar_flutter__widgets__custom_navbar$46dart, packages__carousel_slider__carousel_controller$46dart, packages__carousel_slider__carousel_options$46dart, packages__belajar_flutter__models__category_model$46dart, packages__belajar_flutter__widgets__hero_carousel_card$46dart, packages__belajar_flutter__widgets__section_title$46dart, packages__belajar_flutter__widgets__product_carousel$46dart, packages__belajar_flutter__models__product_model$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const custom_appbar = packages__belajar_flutter__widgets__custom_appbar$46dart.widgets__custom_appbar;
+  const custom_navbar = packages__belajar_flutter__widgets__custom_navbar$46dart.widgets__custom_navbar;
+  const carousel_slider = packages__carousel_slider__carousel_controller$46dart.carousel_slider;
+  const carousel_options = packages__carousel_slider__carousel_options$46dart.carousel_options;
+  const category_model = packages__belajar_flutter__models__category_model$46dart.models__category_model;
+  const hero_carousel_card = packages__belajar_flutter__widgets__hero_carousel_card$46dart.widgets__hero_carousel_card;
+  const section_title = packages__belajar_flutter__widgets__section_title$46dart.widgets__section_title;
+  const product_carousel = packages__belajar_flutter__widgets__product_carousel$46dart.widgets__product_carousel;
+  const product_model = packages__belajar_flutter__models__product_model$46dart.models__product_model;
+  var home_screen = Object.create(dart.library);
+  var $map = dartx.map;
+  var $toList = dartx.toList;
+  var $where = dartx.where;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    BuildContextToHomeScreen: () => (T.BuildContextToHomeScreen = dart.constFn(dart.fnType(home_screen.HomeScreen, [framework.BuildContext])))(),
+    CategoryToHeroCaraouselCard: () => (T.CategoryToHeroCaraouselCard = dart.constFn(dart.fnType(hero_carousel_card.HeroCaraouselCard, [category_model.Category])))(),
+    ProductTobool: () => (T.ProductTobool = dart.constFn(dart.fnType(core.bool, [product_model.Product])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C1() {
+      return C[1] = dart.constList([], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 13,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 28,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.constList([C[4] || CT.C4], widget_inspector._Location);
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[3] || CT.C3,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "category",
+        [_Location_column]: 56,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 38,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "options",
+        [_Location_column]: 15,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "items",
+        [_Location_column]: 15,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 25,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 24,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.constList([C[18] || CT.C18], widget_inspector._Location);
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[17] || CT.C17,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "products",
+        [_Location_column]: 15,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21], widget_inspector._Location);
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 24,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24], widget_inspector._Location);
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "products",
+        [_Location_column]: 15,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27], widget_inspector._Location);
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], widget_inspector._Location);
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottomNavigationBar",
+        [_Location_column]: 7,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34, C[35] || CT.C35], widget_inspector._Location);
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/belajar_flutter/lib/screens/home/home_screen.dart"
+      });
+    }
+  }, false);
+  var C = Array(36).fill(void 0);
+  var I = ["package:belajar_flutter/screens/home/home_screen.dart"];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  home_screen.HomeScreen = class HomeScreen extends framework.StatelessWidget {
+    static route() {
+      return new page.MaterialPageRoute.new({settings: new navigator.RouteSettings.new({name: "/"}), builder: dart.fn(_ => new home_screen.HomeScreen.new({$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), T.BuildContextToHomeScreen())});
+    }
+    build(context) {
+      return new scaffold.Scaffold.new({appBar: new custom_appbar.CustomAppBar.new({title: "ThriftShop", $creationLocationd_0dea112b090073317d4: C[2] || CT.C2}), bottomNavigationBar: new custom_navbar.CustomNavBar.new({$creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), body: new basic.Column.new({children: T.JSArrayOfWidget().of([new container.Container.new({child: new carousel_slider.CarouselSlider.new({options: new carousel_options.CarouselOptions.new({aspectRatio: 1.5, viewportFraction: 0.9, enlargeCenterPage: true, enlargeStrategy: carousel_options.CenterPageEnlargeStrategy.height}), items: category_model.Category.categories[$map](hero_carousel_card.HeroCaraouselCard, dart.fn(category => new hero_carousel_card.HeroCaraouselCard.new({category: category, $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), T.CategoryToHeroCaraouselCard()))[$toList](), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), new section_title.SectionTitle.new({title: "RECOMMENDED", $creationLocationd_0dea112b090073317d4: C[16] || CT.C16}), new product_carousel.ProductCarousel.new({products: product_model.Product.products[$where](dart.fn(product => product.isRecommended, T.ProductTobool()))[$toList](), $creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), new section_title.SectionTitle.new({title: "MOST POPULAR", $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), new product_carousel.ProductCarousel.new({products: product_model.Product.products[$where](dart.fn(product => product.isPopular, T.ProductTobool()))[$toList](), $creationLocationd_0dea112b090073317d4: C[25] || CT.C25})]), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), $creationLocationd_0dea112b090073317d4: C[31] || CT.C31});
+    }
+  };
+  (home_screen.HomeScreen.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    home_screen.HomeScreen.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = home_screen.HomeScreen.prototype;
+  dart.addTypeTests(home_screen.HomeScreen);
+  dart.addTypeCaches(home_screen.HomeScreen);
+  dart.setMethodSignature(home_screen.HomeScreen, () => ({
+    __proto__: dart.getMethods(home_screen.HomeScreen.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(home_screen.HomeScreen, I[0]);
+  dart.defineLazy(home_screen.HomeScreen, {
+    /*home_screen.HomeScreen.routeName*/get routeName() {
+      return "/";
+    }
+  }, false);
+  dart.trackLibraries("packages/belajar_flutter/screens/home/home_screen.dart", {
+    "package:belajar_flutter/screens/home/home_screen.dart": home_screen
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["home_screen.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAUI,YAAO,2CACK,uDACD,QAAC,KAAM;IAEpB;UAG0B;AACxB,YAAO,oCACG,2CAAoB,4FACP,mGACf,gCACM,wBACR,oCACS,iDACI,uDACM,uBACK,wBACC,uBACwB,4DAE7B,AACX,AACA,+EADI,QAAC,YAAa,wDAA4B,QAAQ,6NAI/D,2CAAoB,0EACpB,oDACsB,AACb,AACA,uCADM,QAAC,WAAY,AAAQ,OAAD,2GAEnC,2CAAoB,2EACpB,oDACsB,AACb,AACA,uCADM,QAAC,WAAY,AAAQ,OAAD;IAK3C;;;;;;EACF;;;;;;;;;MA3CsB,gCAAS","file":"../../../../packages/belajar_flutter/screens/home/home_screen.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__home__home_screen: home_screen
+  };
+}));
+
+//# sourceMappingURL=home_screen.dart.lib.js.map
