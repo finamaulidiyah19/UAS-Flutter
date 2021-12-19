@@ -1,0 +1,4 @@
+#Tue Dec 14 07:43:15 ICT 2021
+base.0=D\:\\belajar_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
